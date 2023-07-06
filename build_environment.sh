@@ -21,3 +21,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 # 도커 컴포즈 설치(https://github.com/docker/compose/releases)
 sudo curl –L “https://github.com/docker/compose/releases/download/[최신 버전]/docker-compose-$(uname -s)-$(uname -m)” –o /usr/local/bin/docker-compose
 sudo chmod –x /usr/local/bin/docker-compose
+
+# version 확인으로 정상 설치 확인
+docker version
+docker-compose version
