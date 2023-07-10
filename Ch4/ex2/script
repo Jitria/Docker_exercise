@@ -1,0 +1,5 @@
+docker volume create example
+
+docker container run -it -t -v ex2:/data --name case3 ubuntu
+
+docker container run -it -t -v ex2:/home --name case4 ubuntu
