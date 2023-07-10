@@ -1,0 +1,5 @@
+docker container run --interactive --tty --rm ubuntu
+
+# --interactive : 컨테이너에 접속(-it)
+# --tty : 터미널 세션을 통해 컨테이너 조작(-t)
+# --rm : exit시 컨테이너 자동 삭제
