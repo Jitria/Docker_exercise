@@ -1,0 +1,7 @@
+docker image build --tag t1 .
+
+docker container run -it -t --name case1 t1
+
+docker container run -it -t --name case2 --volumes-from case1 t1
+
+docker container inspect [ContainerID]
