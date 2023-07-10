@@ -1,0 +1,5 @@
+mkdir doc
+
+docker container run --name case5 -it -t --mount type=bind,source=“[pwd]\doc”,target=‘/data’,readonly ubuntu
+
+docker container run --name case6 -it -t --mount type=bind,source=“[pwd]\doc”,target=‘/home’ ubuntu
