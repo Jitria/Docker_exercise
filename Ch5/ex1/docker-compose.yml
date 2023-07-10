@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - app-net
+networks:
+  app-net:
+    external:
+      name: nat
