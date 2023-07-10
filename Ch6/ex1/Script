@@ -1,0 +1,7 @@
+docker image build --tag exhealth .
+
+docker container run -d exhealth
+
+docker container ls
+
+docker container inspect [containerID]
