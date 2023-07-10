@@ -1,0 +1,7 @@
+docker login --username [dockerID]
+
+docker image tag hello [dockerID]/hello:v1
+
+docker image ls --filter reference=hello --filter reference=‘*/hello’
+
+docker image push [dockerID]/hello:v1
