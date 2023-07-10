@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+
+  nginx1:
+    image: nginx
+
+  nginx2:
+    image: nginx
