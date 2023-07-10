@@ -1,0 +1,9 @@
+docker-compose -f docker-compose-new.yml up -d --scale nginx1=3
+
+docker-compose -f docker-compose-new.yml stop
+
+docker-compose -f docker-compose-new.yml restart
+
+docker-compose -f docker-compose-new.yml down
+
+docker-compose -f docker-compose-new.yml up -d
