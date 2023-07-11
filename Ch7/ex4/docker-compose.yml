@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 100M
