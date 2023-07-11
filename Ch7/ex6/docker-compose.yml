@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    secrets:
+      - source: byehtml
+        target: /usr/share/nginx/html/index.html
+
+secrets:
+  byehtml:
+    external: true
