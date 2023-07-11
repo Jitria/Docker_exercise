@@ -1,0 +1,3 @@
+docker stack deploy -c ./docker-compose.yml newhtml
+
+docker container inspect [containerID]
