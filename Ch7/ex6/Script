@@ -1,0 +1,11 @@
+docker secret create byehtml ./html.html
+
+docker secret ls
+
+docker secret inspect --pretty byehtml
+
+docker stack deploy -c ./docker-compose.yml newhtml
+
+docker stack ps newhtml
+
+docker container ls -a
