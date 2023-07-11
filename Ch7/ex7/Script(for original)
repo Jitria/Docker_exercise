@@ -1,0 +1,9 @@
+docker node update --label-add storage=raid $(docker node ls -q)
+
+docker volume ls
+
+docker stack deploy -c ./docker-compose.yml newhtml
+
+docker volume ls
+
+docker container inspect [containerID]
