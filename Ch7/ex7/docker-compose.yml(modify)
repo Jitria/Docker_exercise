@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.25.1
+    ports:
+      - "8080:80"
+    volumes:
+      - ex1:/usr/share/nginx/html
+    deploy:
+      placement:
+        constraints:
+          - node.labels.storage == raid
+volumes:
+  ex1:
