@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    configs:
+      - source: html
+        target: /usr/share/nginx/html/index.html
+
+configs:
+  html:
+    external: true
