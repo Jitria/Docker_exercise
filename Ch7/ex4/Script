@@ -1,0 +1,7 @@
+docker stack deploy -c ./docker-compose-v2.yml nginx
+
+docker service ps nginx_nginx
+
+docker stack services nginx
+
+docker stack rm nginx
