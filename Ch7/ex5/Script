@@ -1,0 +1,9 @@
+docker config create html ./html.html
+
+docker config ls
+
+docker config inspect --pretty html
+
+docker stack deploy -c docker-compose.yml newhtml
+
+docker stack services newhtml
