@@ -1,0 +1,10 @@
+docker service create --name new1 --replicas 1 -d -p 8080:80 nginx
+
+docker service ls
+
+docker service ps new1
+
+docker container rm -f $(docker container ls -aq)
+docker service ps new1
+
+docker service inspect new1 -f ‘{{.Spec.TaskTemplate.ContainerSpec.Image}}’
