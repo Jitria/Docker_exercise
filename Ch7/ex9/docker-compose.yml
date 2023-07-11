@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 10 
+      rollback_config:
+        parallelism: 6
+        monitor: 0s
+        failure_action: continue
+        order: start-first
