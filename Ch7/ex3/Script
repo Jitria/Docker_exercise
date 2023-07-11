@@ -1,0 +1,5 @@
+docker stack deploy -c ./docker-compose.yml nginx
+
+docker stack ls
+
+docker service ls
