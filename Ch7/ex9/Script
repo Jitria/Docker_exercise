@@ -1,0 +1,3 @@
+docker stack deploy -c ./docker-compose.yml newupdate
+
+docker service inspect --pretty newupdate_nginx
